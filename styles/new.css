@@ -6,7 +6,8 @@ body {
   margin: 0;
   font-family: 'Bebas Neue', cursive;
   box-sizing: border-box;
-  background-color: black;
+  width: 100%;
+  overflow-x:hidden ;
 }
 
 a {
@@ -410,8 +411,6 @@ a {
   display: grid;
   width: 98%;
   margin:0 auto;
-  align-items: center;
-  padding-top: 10px;
   grid-template-columns: 50% 50%;
 }
 
@@ -419,16 +418,7 @@ a {
   display: grid;
   grid-template-columns: 20% 80%;
   align-items: center;
-  max-width: 300px;
-}
-
-.editBack h2 {
-  font-size: 1em;
-}
-
-.editBack img {
-  width: 100%;
-  max-width: 20px;
+  max-width: 370px;
 }
 
 .editCheck div {
@@ -439,12 +429,6 @@ a {
   width: 100%;
   justify-content: flex-end;
   cursor: pointer;
-}
-
-.editCheck a {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
 }
 
 .editCheck {
@@ -460,23 +444,18 @@ a {
   max-width: 170px;
 }
 
-.editCheck div span img {
-  width: 100%;
-  max-width: 20px;
-}
-
 .editUserBody {
   height: 80%;
   display: grid;
-  grid-template-columns: 90%;
+  grid-template-columns: 50%;
   align-items: center;
   justify-content: center;
 }
 
 #editUserBody {
   display: grid;
-  grid-template-columns: 40% 60%;
-  max-width: 340px;
+  grid-template-columns: 30% 70%;
+  max-width: 540px;
   margin:0 auto;
 }
 
@@ -492,9 +471,9 @@ a {
 
 .editUserEdit {
   position:absolute;
-  top:54%;
+  top:58%;
   left: 2%;
-  width:20%;
+  width:18%;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 2px;
@@ -509,18 +488,17 @@ a {
 #editUserImg {
   position:absolute;
   display: grid;
-  grid-template-columns: 70px 70px 70px 70px;
+  grid-template-columns: 60px 60px 60px 60px;
   justify-content: space-evenly;
   padding: 10px;
   border:1px solid white;
   height: auto;
   transition: all 0.5s;
-  width: 250%;
-  max-width: 340px;
+  width: 200%;
 }
 
 #editUserImg img {
-  max-height: 50px;
+  max-height: 38px;
   width: 100%;
   border:2px solid black;
   transition: all 0.5s ;
@@ -550,7 +528,7 @@ a {
   display: grid;
   align-items: center;
   font-size: 1.2em;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
 }
 
 #switch span {
@@ -569,18 +547,17 @@ a {
   position: sticky;
   top: 0;
   grid-template-columns: 50% 50%;
-  padding-left: 2%;
-  padding-right: 2%;
   justify-content: space-evenly;
   background-color: rgba(0, 0, 0, 0.0);
   color:white;
   padding: 0px;
+  padding-left: 2%;
+  padding-right: 2%;
   z-index: 100;
 }
 
 .userMovies .logoNav {
   padding-top: 20px;
-  padding-left: 10px;
   padding-bottom: 20px;
 }
 
@@ -590,7 +567,7 @@ a {
 
 .userMovies .logoNav {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 12% 86%;
 }
 
 /* menuMobile */
@@ -643,9 +620,9 @@ a {
 #menuMobileContainer {
   width: 16%;
   height: 200%;
+  min-width: 240px;
   overflow: hidden;
   background-color: #292929;
-  min-width: 240px;
 }
 
 
@@ -739,13 +716,13 @@ a {
 }
 
 .category .buttonActive {
-  border-left: 6px solid red;
+  border-left: 6px solid #e61325;
   color:white;
 }
 
 
 #search {
-  width: 100%;
+  width: 70%;
   max-width: 120px;
   display: grid;
   grid-template-columns:auto auto ;
@@ -759,6 +736,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 #hiddenNav {
   opacity: 0;
 }
@@ -791,13 +769,12 @@ a {
   display: flex;
   justify-content: center;
   justify-self: center;
-  width: 80%;
-  max-width: 400px;
+  width: 60%;
+  max-width: 380px;
 }
 .hiddenSearchIcon input {
   border:2px solid rgba(255, 0, 255, 0.712);
-  width: 80%;
-  padding-left: 2%;
+  width: 90%;
   background-color: rgba(0, 0, 0, 0.8);
   color:white;
 }
@@ -808,7 +785,7 @@ a {
 }
 
 .hiddenSearchIcon input:focus, .hiddenSearchIcon input:active {
-  padding-left: 2%;
+  padding-left: 3%;
 }
 
 .hiddenSearchIcon input:focus::placeholder, .hiddenSearchIcon input:active::placeholder {
@@ -875,6 +852,10 @@ a {
   cursor: default;
 }
 
+.cta p {
+  font-size: 0.9em;
+}
+
 .cta h2 {
   font-size: 1.4em;
   cursor: default;
@@ -884,7 +865,7 @@ a {
 .cta div {
   display: grid;
   grid-template-columns: 45% 45%;
-  grid-column-gap: 2%;
+  grid-column-gap:2%;
   padding-bottom: 30px;
 }
 
@@ -905,7 +886,7 @@ a {
 }
 
 .cta p {
-  width: 50%;
+  width: 100%;
   font-size: 1.1em;
   cursor: default;
 }
@@ -990,7 +971,7 @@ a {
 
 .cardMovie, .cardMovieTwo, .cardMovieFour {
   display: none;
-  max-width: 220px;
+  max-width: 200px;
   max-height: 300px;
   min-width: 130px;
 }
@@ -1004,7 +985,7 @@ a {
   display: none;
   max-width: 330px;
   max-height: 230px;
-  min-width: 270px;
+  min-width: 260px;
 }
 
 .cardMoviePlay {
@@ -1056,7 +1037,7 @@ a {
 .carMovieIconImg {
   width: 100%;
   height: 98%;
-  max-height: 150px;
+  max-height: 178px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1064,7 +1045,7 @@ a {
 
 .carMovieIconImg img {
   min-width: 68px;
-  min-height: 48px;
+  min-height: 68px;
 }
 
 .carMovieBar {
@@ -1073,7 +1054,7 @@ a {
 }
 
 .cardMoviePlayMainImg {
-  min-height: 150px;
+  min-height: 181px;
 }
 
 /* details Movie */
@@ -1211,6 +1192,7 @@ a {
 
 .searchDetail {
   background-color: black;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -1222,11 +1204,10 @@ a {
 
 .searchSuggestions {
   display: grid;
-  grid-template-columns: 100%;
-  width: 90%;
+  grid-template-columns: 80% 20%;
+  width: 98%;
   margin:0 auto;
   height: 100%;
-  padding-top: 10px;
 }
 
 .cardSearchDetail {
@@ -1234,20 +1215,23 @@ a {
   position: relative;
   z-index: 100;
   height: 100%;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   transition: all 0.5s;
 }
 
+.cardSearchDetail:hover {
+  overflow-y: scroll;
+}
 
 .cardSearchDetails {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-column-gap: 10px;
 }
 
 .searchSuggestions h1 {
   width: 100%;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .cardSearchDetailImg img {
@@ -1257,27 +1241,27 @@ a {
 
 .suggestions {
   color:white;
-  padding-left: 0%;
-  padding-bottom: 80px;
+  padding-left: 4%;
 }
 
 .suggestions h2 {
   padding-bottom: 10px;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .suggestions p {
+  margin:0;
   padding-top: 20px;
-  font-size:1.2em;
+  font-size:1.8em;
+  cursor:default;
 }
 
 .loading {
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: grid;
   grid-template-columns: 14px 14px 14px 14px 14px;
   grid-column-gap: 10px;
-  justify-content: center;
 }
 
 .loading div {
@@ -1375,67 +1359,34 @@ a {
     grid-template-columns: 150px 150px 150px;
   }
 
-  #menuMobileContainer {
-    width: 24%;
-  }
-
-  .searchDetail {
-    height: 100vh;
-  }
-
-  .searchSuggestions {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    width: 98%;
-    margin:0 auto;
-    padding-top: 0;
-    height: 100%;
-  }
-
-  .cardSearchDetails {
-    display: grid;
-    height: 100%;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 10px;
-    padding-bottom: 80px;
-  }
-
-  .searchSuggestions h1 {
-    width: 100%;
-    font-size: 2em;
-  }
-
-  .suggestions {
-    padding-left: 4%;
-    padding-bottom: 0px;
-  }
-
-  .suggestions h2 {
-    padding-bottom: 10px;
-    font-size: 2em;
-  }
-
-  .suggestions p {
-    padding-top: 20px;
-    font-size:1.4em;
-  }
-
   @media screen and (min-width:800px) {
     #showCardUser {
       grid-template-columns: 150px 150px 150px 150px;
    }
 
-   .userMovies .nav {
-     padding-left: 0;
-     padding-right: 0;
-   }
-
    .userMovies .logoNav {
-     padding-left: 1%;
-     grid-template-columns: 7% 93%;
-   }
+    display: grid;
+    grid-template-columns: 7% 93%;
+  }
 
-   .cta h1 {
+  .userMovies .nav {
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 49% 49%;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.0);
+    color:white;
+    padding: 0px;
+    z-index: 100;
+  }
+
+  .cta {
+    width: 90%;
+  }
+
+  .cta h1 {
     font-size: 3.5em;
   }
 
@@ -1457,72 +1408,25 @@ a {
   .cta button {
     font-size: 1.3em;
   }
+
   .cardMovie, .cardMovieTwo, .cardMovieFour {
+    display: none;
     max-width: 220px;
     max-height: 300px;
     min-width: 200px;
   }
-
+  
   .cardMovieThree {
+    display: none;
     max-width: 330px;
     max-height: 230px;
     min-width: 310px;
   }
 
-  .carMovieIconImg img {
-    min-height: 68px;
+  #search {
+    width: 20%;
   }
 
-  .carMovieIconImg {
-    max-height: 178px;
-  }
-
-  .cardMoviePlayMainImg {
-    min-height: 181px;
-  }
-
-  .editBack h2 {
-    font-size: 1.5em;
-  }
-
-  .editBack img {
-    max-width: 30px;
-  }
-
-  .editCheck div span img {
-    width: 100%;
-    max-width: 30px;
-  }
-
-  .editUserBody {
-    grid-template-columns: 50%;
-  }
-
-  #editUserBody {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    max-width: 500px;
-    margin:0 auto;
-  }
-
-  .switch {
-    padding-top: 10px;
-    grid-template-columns: 20% 70%;
-  }
-  
-
-  .cardSearchDetails {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 10px;
-    padding-bottom: 80px;
-  }
-
-  .suggestions p {
-    padding-top: 20px;
-    font-size:1.8em;
-  }
-  
   }
 
   @media screen and (min-width:1000px) {
@@ -1530,10 +1434,7 @@ a {
       grid-template-columns: 150px 150px 150px 150px 150px;
    }
 
-   .cardSearchDetail:hover {
-    overflow-y: scroll;
-  }
-
+   
   }
 
 
