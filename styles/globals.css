@@ -856,8 +856,8 @@ a {
   margin-top: -74px;
 }
 .movieBack {
-  padding-top: 210px;
-  padding-bottom: 210px;
+  padding-top: 110px;
+  padding-bottom: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -871,7 +871,7 @@ a {
 .cta h1 {
   margin: 0;
   font-size: 2em;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
   cursor: default;
 }
 
@@ -905,9 +905,10 @@ a {
 }
 
 .cta p {
-  width: 50%;
-  font-size: 1.1em;
+  width: 80%;
+  font-size: 1.2em;
   cursor: default;
+  font-weight: 500;
 }
 
 .cta button img {
@@ -1435,28 +1436,6 @@ a {
      grid-template-columns: 7% 93%;
    }
 
-   .cta h1 {
-    font-size: 3.5em;
-  }
-
-  .cta h2 {
-    font-size: 2.2em;
-  }
-
-  .cta p {
-    font-size: 1.6em;
-    width: 50%;
-  }
-
-  .cta div {
-    display: grid;
-    grid-template-columns: 14% 14%;
-    grid-column-gap: 10px;
-  }
-
-  .cta button {
-    font-size: 1.3em;
-  }
   .cardMovie, .cardMovieTwo, .cardMovieFour {
     max-width: 220px;
     max-height: 300px;
@@ -1533,6 +1512,37 @@ a {
    .cardSearchDetail:hover {
     overflow-y: scroll;
   }
+
+  .movieBack {
+    padding-top: 210px;
+    padding-bottom: 210px;
+  }
+
+
+  .cta h1 {
+   font-size: 3.5em;
+   padding-bottom: 120px;
+ }
+
+ .cta h2 {
+   font-size: 2.2em;
+ }
+
+ .cta p {
+   font-size: 1.6em;
+   width: 50%;
+   font-weight: 500;
+ }
+
+ .cta div {
+   display: grid;
+   grid-template-columns: 14% 14%;
+   grid-column-gap: 10px;
+ }
+
+ .cta button {
+   font-size: 1.3em;
+ }
 
   }
 
