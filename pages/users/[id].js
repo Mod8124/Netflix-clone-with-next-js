@@ -32,16 +32,18 @@ const Details = () => {
         const page = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${url}&with_watch_monetization_types=flatrate`)
         return await page.json()
       }
-     const dataTwo = await getData(1)
-    const dataThree = await getData(2)
-    const dataFour = await getData(3)
-    const dataFive = await getData(4)
-      
-    movies.push(dataTwo)
-    movies.push(dataThree)
-    movies.push(dataFour)
-    movies.push(dataFive)
-  
+
+      const dataTwo =  getData(1)
+      const dataThree =  getData(2)
+      const dataFour =  getData(3)
+      const dataFive =  getData(4)
+
+      const data = await Promise.all([dataTwo,dataThree,dataFour,dataFive]).then(moviesList => {
+        moviesList.forEach(movie => {
+          movies.push(movie)
+        })
+      })
+
     if(movies) {
       setListMovie(movies)
     }
