@@ -1,4 +1,4 @@
-#Netflix clone with NextJs
+# Netflix clone with NextJs
 ![Design preview for the Todo app coding challenge](./public/clone-netflix.jpg)
 
 ## Getting Started
